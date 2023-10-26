@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Personal Website</title>
+    <link rel="stylesheet" href="mystyle-Biking.css" />
+    </head>
+ <video autoplay muted loop id="myVideo">
+        <source src="vid/Biking.mp4" type="video/mp4">
+    </video>
+<body>
+
+    <div class="menu">
+        <header>
+          <div id="timedisplay"></div>
+            <nav>
+                <ul>
+                    <li><a id="list" href="index - Copy.html">My world</a></li>
+                    <li><a class="active" href="Biking.html">Biking</a></li>
+                    <li><a id="list"href="Anime.html">Anime</a></li>
+                    <li><a id="list"href="Gaming.html">Gaming</a></li>
+					<li><a id="list"href="Logo.html">Logo</a></li>
+                </ul>
+            </nav>
+          
+        </header>
+    </div>
+	<div id="speech">
+		<p>Biking has many benefits to you as a hobby. For me it is the feeling of speed and control. The flow of adrenalin from dangerous and challenging "downhill" ride is irreplaceable. You have to try extreme biking at least once in your life. But it is unnessecery, you can enjoy casual biking. Just remember that there is more interesting part 	 〇´-〇  </p>
+		</div>
+    <div id="content">
+        <h1>Challenge on progress?</h1>
+        <p>Remember to enjoy the page 	ヽ(*⌒▽⌒*)ﾉ P.S. for mobile: tap here</p>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+ <video autoplay muted loop id="PageChoose">
+        <source src="vid/PageChoose.mp4" type="video/mp4">
+    </video>
+    <script>
+        var video = document.getElementById("PageChoose");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+var vid = document.getElementById("PageChoose");
+vid.playbackRate = 1.5;
+
+function getDate()
+{
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    if(seconds < 10)
+    {
+        seconds = '0' + seconds;
+    }
+	if(minutes < 10)
+    {
+        minutes = '0' + minutes;
+    }
+    document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+}
+setInterval(getDate, 0);
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Personal Website</title>
+    <link rel="stylesheet" href="mystyle.css" />
+   </head>
+ <video autoplay muted loop id="myVideo">
+        <source src="vid/Lake.mp4" type="video/mp4">
+    </video>
+<body>
+
+    <div class="menu">
+        <header>
+          <div id="timedisplay"></div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">My world</a></li>
+                    <li><a id="list"href="Biking.html">Biking</a></li>
+                    <li><a id="list"href="Anime.html">Anime</a></li>
+                    <li><a id="list"href="Gaming.html">Gaming</a></li>
+					<li><a id="list"href="Logo.html">Logo</a></li>
+                </ul>
+            </nav>
+          
+        </header>
+    </div>
+	<div id="speech">
+		<p>Because of people, this world can be unjust and cruel. But no matter what, we have to continue our journey, and hobbies can help you stay sane on your path. I want to show you what helps me getting through difficulties.</p>
+	</div>
+    <div id="content">
+        <h1>I challange you!</h1>
+        <p>Aim: visit all pages (⁀ᗢ⁀) Time limit: 5 min (ﾒ﹏ﾒ) Rules: 1.Use "randomaizer," point (or tap) at this text for it to show up---2.Use "pause" button below---3.You have to go to page corrisponding to the image from "randomaizer"---4.Remember to enjoy the content on each page (￢‿￢ ) P.S. To time yourself there is a digital watch on top-right side 		٩(◕‿◕｡)۶  Good Luck!</p>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+ <video autoplay muted loop id="PageChoose">
+        <source src="vid/PageChoose.mp4" type="video/mp4">
+    </video>
+    <script>
+        var video = document.getElementById("PageChoose");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+var vid = document.getElementById("PageChoose");
+vid.playbackRate = 1.5;
+
+function getDate()
+{
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    if(seconds < 10)
+    {
+        seconds = '0' + seconds;
+    }
+	if(minutes < 10)
+    {
+        minutes = '0' + minutes;
+    }
+    document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+}
+setInterval(getDate, 0);
+
+</script>
+</body>
+
+</html>

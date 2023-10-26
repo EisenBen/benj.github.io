@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Personal Website</title>
+    <link rel="stylesheet" href="mystyle-Gaming.css" />
+    </head>
+ <video autoplay muted loop id="myVideo">
+        <source src="vid/Game.mp4" type="video/mp4">
+    </video>
+<body>
+
+    <div class="menu">
+        <header>
+          <div id="timedisplay"></div>
+            <nav>
+                <ul>
+                    <li><a id="list" href="index - Copy.html">My world</a></li>
+                    <li><a id="list"href="Biking.html">Biking</a></li>
+                    <li><a id="list"href="Anime.html">Anime</a></li>
+                    <li><a class="active"href="Gaming.html">Gaming</a></li>
+					<li><a id="list"href="Logo.html">Logo</a></li>
+                </ul>
+            </nav>
+          
+        </header>
+    </div>
+	<div id="speech">
+		<p>Games are the next step after books and films. The opportunity to interact with the story is incredible. Absolutely anyone can find a game that they will like. Games made my critical and logical thinking so much better. It is scientifically proven that games can be beneficial to your brain and can be very relaxing.</p>
+		</div>
+    <div id="content">
+        <h1>Challenge on progress?</h1>
+        <p>Tick tack... ready to give up? (ﾉಥ益ಥ)ﾉ P.S. for mobile: tap here</p>
+		<button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+ <video autoplay muted loop id="PageChoose">
+        <source src="vid/PageChoose.mp4" type="video/mp4">
+    </video>
+    <script>
+        var video = document.getElementById("PageChoose");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+var vid = document.getElementById("PageChoose");
+vid.playbackRate = 1.5;
+
+function getDate()
+{
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    if(seconds < 10)
+    {
+        seconds = '0' + seconds;
+    }
+	if(minutes < 10)
+    {
+        minutes = '0' + minutes;
+    }
+    document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+}
+setInterval(getDate, 0);
+
+</script>
+</body>
+
+</html>

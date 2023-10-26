@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Personal Website</title>
+    <link rel="stylesheet" href="mystyle-Anime.css" />
+    </head>
+ <video autoplay muted loop id="myVideo">
+        <source src="vid/Anime.mp4" type="video/mp4">
+    </video>
+<body>
+
+    <div class="menu">
+        <header>
+          <div id="timedisplay"></div>
+            <nav>
+                <ul>
+                    <li><a id="list" href="index - Copy.html">My world</a></li>
+                    <li><a id="list"href="Biking.html">Biking</a></li>
+                    <li><a class="active" href="Anime.html">Anime</a></li>
+                    <li><a id="list"href="Gaming.html">Gaming</a></li>
+					<li><a id="list"href="Logo.html">Logo</a></li>
+                </ul>
+            </nav>
+          
+        </header>
+    </div>
+	<div id="speech">
+		<p>The world of anime and manga is infinite. For many people they have become the definition of bizarre stories and astonishing art. Forget all the stereotypes, give it a try and thank me later. If you are already into this amazing and endless world, then just enjoy this stylized page dedicated to my love for anime and manga.</p>
+	</div>
+    <div id="content">
+        <h1>Challenge on progress?</h1>
+        <p>Hopefully it is your first time on this page ┬┴┬┴┤( ͡° ͜ʖ├┬┴┬┴ If not, don't worry and keep trying but remember you have 5 minutes only... Time is ticking (ﾉಥ益ಥ)ﾉ P.S. for mobile: tap here</p>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+ <video autoplay muted loop id="PageChoose">
+        <source src="vid/PageChoose.mp4" type="video/mp4">
+    </video>
+    <script>
+        var video = document.getElementById("PageChoose");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+var vid = document.getElementById("PageChoose");
+vid.playbackRate = 1.5;
+
+function getDate()
+{
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    if(seconds < 10)
+    {
+        seconds = '0' + seconds;
+    }
+	if(minutes < 10)
+    {
+        minutes = '0' + minutes;
+    }
+    document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+}
+setInterval(getDate, 0);
+
+</script>
+</body>
+
+</html>

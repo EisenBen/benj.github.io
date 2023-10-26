@@ -37,7 +37,7 @@ body {
   to {opacity: 0.8;}
 }
 .menu {
-	opacity: 0.8;
+	opacity: 1;
 	background: rgba(0, 0, 0, 0.5);
 	color: #f1f1f1;
 	width: 100%;
@@ -49,7 +49,7 @@ body {
 }
 
 .menu:hover {
-  opacity: 1;
+  opacity: 3;
     background: rgba(0, 0, 0, 0.3);  
     color: #ede7d3;
     width: 100%;
@@ -89,7 +89,7 @@ margin-top: 1.5%;
 }
 #list:hover {
   border-style: hidden;
- box-shadow: 0px 0px 50px rgb(20 255 0 / 76%);
+ box-shadow: 0px 0px 50px rgb(20 255 0 / 90%);
     padding: 14px 36px;
     margin: 7px 15px 0px 15px;
   border-radius: 5px;
@@ -116,7 +116,7 @@ nav li a {
 #speech {
 	position: fixed;
 	border-radius: 20px;
-	background: rgb(0 0 0 / 40%);
+	background: rgb(0 0 0 / 90%);
 	color: #ede7d3;
 	width: 27%;
 	font-size: 32px;
@@ -151,7 +151,7 @@ nav li a {
 	font-size: 20px;
 	position: fixed;
 	bottom: 0;
-	background: rgb(0 0 0 / 40%);
+	background: rgb(0 0 0 / 90%);
 	color: #ede7d3;
 	width: 100%;
 	padding: 20px;
